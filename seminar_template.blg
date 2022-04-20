@@ -12,47 +12,48 @@ Database file #1: literature.bib
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty booktitle in sdl
+Warning--empty booktitle in xp
 
 Done.
-You've used 1 entry,
+You've used 8 entries,
             4024 wiz_defined-function locations,
-            812 strings with 7305 characters,
-and the built_in function-call counts, 517 in all, are:
-= -- 25
-> -- 9
+            845 strings with 8701 characters,
+and the built_in function-call counts, 3207 in all, are:
+= -- 233
+> -- 50
 < -- 0
-+ -- 4
-- -- 2
-* -- 35
-:= -- 92
-add.period$ -- 2
-call.type$ -- 1
-change.case$ -- 1
++ -- 24
+- -- 12
+* -- 122
+:= -- 558
+add.period$ -- 16
+call.type$ -- 8
+change.case$ -- 14
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 37
-empty$ -- 53
-format.name$ -- 3
-if$ -- 97
+cite$ -- 10
+duplicate$ -- 276
+empty$ -- 331
+format.name$ -- 14
+if$ -- 688
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 7
-newline$ -- 26
-num.names$ -- 1
-pop$ -- 25
+int.to.str$ -- 8
+missing$ -- 64
+newline$ -- 47
+num.names$ -- 8
+pop$ -- 188
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 35
+skip$ -- 253
 stack$ -- 0
-substring$ -- 1
-swap$ -- 16
+substring$ -- 20
+swap$ -- 144
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 1
-warning$ -- 1
-while$ -- 1
-width$ -- 2
-write$ -- 29
-(There was 1 warning)
+type$ -- 8
+warning$ -- 2
+while$ -- 8
+width$ -- 9
+write$ -- 84
+(There were 2 warnings)

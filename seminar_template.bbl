@@ -24,4 +24,36 @@
 \bibitem{sdl}
 M.~Howard and S.~Lipner, ``The security development lifecycle,'' 2006.
 
+\bibitem{relatedpaper1}
+J.~Kuusela, ``Security testing in continuous integration processes,'' 2017,
+  \url{https://aaltodoc.aalto.fi/bitstream/handle/123456789/27065/master_Kuusela_Juha_2017.pdf?sequence=1&isAllowed=y}.
+
+\bibitem{relatedpaper2}
+P.~Thulin, ``Evaluation of the applicability of security testing techniques in
+  continuous integration environments,'' 2015,
+  \url{https://www.diva-portal.org/smash/get/diva2:784545/FULLTEXT01.pdf}.
+
+\bibitem{relatedpaper3}
+P.~Koskela, ``Automated security testing utilizing continuous integration and
+  continuous delivery technologies,'' 2021,
+  \url{https://www.theseus.fi/bitstream/handle/10024/502952/Opinnaytetyto_Koskela_Pyry.pdf?sequence=2}.
+
+\bibitem{relatedpaper4}
+J.~Immonen, ``Web application security testing as part of continuous
+  integration in .net projects,'' 2015,
+  \url{https://www.theseus.fi/bitstream/handle/10024/103333/Immonen_Joona.pdf?sequence=1&isAllowed=y}.
+
+\bibitem{relatedpaper5}
+E.~Viitasuo, ``Adding security testing in devops software development with
+  continuous integration and continuous delivery practices,'' 2020,
+  \url{https://www.theseus.fi/bitstream/handle/10024/342349/Opinnaytetyo_Ella_Viitasuo_pdfa.pdf?sequence=2&isAllowed=y}.
+
+\bibitem{relatedpaper6}
+R.~N. Rajapakse, M.~Zahedi, M.~A. Babar, and H.~Shen, ``Challenges and
+  solutions when adopting devsecops: A systematic review,'' 2022,
+  \url{https://www.sciencedirect.com/science/article/pii/S0950584921001543#d1e1647}.
+
+\bibitem{xp}
+K.~Beck, ``Extreme programming explained: Embrace change,'' 1999.
+
 \end{thebibliography}

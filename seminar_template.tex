@@ -6,6 +6,7 @@
 \usepackage{cite}
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage{hyperref}
 \usepackage{amssymb}
 \usepackage{flushend}
 
@@ -51,14 +52,27 @@
 
 Software development is still a very young craft. But we are writing the year 2022 and the amount of devices containing more and more complex software is growing rapidly. Comprehensive quality assurance, especially in the field of web application development, also could deserve a lot more attention. Nevertheless, while a few years ago it was quite common practice to edit files on a production server directly via FTP in order to deploy a fix or a change, today methods and processes to assure a certain level of quality are used quite often. One of that method is so called Continuous Integration (CI). The idea is to provide immediate feedback to the developers directly after the integration of changes to a codebase. On every push to the repository a so called CI server starts executing a pipeline of predefined tasks to ensure high quality and to make sure the changes do not break existing functionality. Common tasks are static code analysis to ensure a clean coding style or to catch simple development mistakes or unit testing to make sure the codebase maintains a high quality standard.
 
-As this is also still a very young process, it is pretty obvious that software security also does not play a big role. But as the growing interconnectivity through the pandemic and also recent attacks against critical infrastructure moving through the media, cyber security gets a greater attention in recent times. In the context of the Security Development Lifecycle \cite{sdl}, one idea to ensure a great level of application security is to automate as much as possible directly during the CI pipeline. 
+As this is also still a very young process, it is pretty obvious that software security also does not play a big role. But as the growing interconnectivity through the pandemic and also recent attacks against critical infrastructure moving through the media, cyber security gets a greater attention in recent times.
 
-This work give an overview of the current state of continous security testing, its categories, possibilities and limits and will also provide an overview of existing tools.  
+- Früher common DANACH zb durch pen testing, -> dann intro zum SDL! elcher schon eher den prozess fixen will!
+next satz is bullshit:
 
+ In the context of the Security Development Lifecycle \cite{sdl}, one idea to ensure a great level of application security is to automate as much as possible directly during the CI pipeline. 
+
+This work tries to provide an overview of the current state of continuous security testing, its categories, possibilities and limits and will also present some existing tools. The paper is structured as follows: First it will give an overview of related work and some technical background before going through tools. Finally a discussion of the findings will be ended with a conclusion.
 
 \section{Related work}
 
+\cite{relatedpaper1}
+\cite{relatedpaper2}
+\cite{relatedpaper3}
+\cite{relatedpaper4}
+\cite{relatedpaper5}
+\cite{relatedpaper6}
 --> halt checken was da ggf fehlt, bissl drauf eingehen und zusammenfassen
+
+Summarizes work on related problems/approaches, but no background knowledge
+ Differences of previous work and own work are clearly stated
 
 - Check andere Papers
 -> SO: Was macht anderes Paper und was mach ich hier anders? nur 1-3 Sätze pro Paper!
@@ -68,11 +82,26 @@ This work give an overview of the current state of continous security testing, i
 
 \section{Background}
 
+This chapter provides a quick overview of basic concepts the reader has to understand in order to further grasp the contents of this paper. It will focus on the concept of continuous integration which is an important part of so called "DevOps" (Development and operations) as well as current efforts to automate application security assurance in modern software development products ("DevSecOps").
 
-- Was muss leser minimum verstehen um Arbeit zu verstehen. Also die "Fachliche Grundlage" für mein Paper
-- Grundlage legen: was is CI, was is DevOps ===> UND: was is DevSecOps!!!!!!!! Thema Security!!!
-- hier vielleicht papers zum thema devOps referenzieren: zb Agile Manifesto, Wasserfall, ETC!
-- WICHTIG VORHER: READ STUFF! und direkt daraus bullet points machen
+\subsection{DevOps \& Continuous Integration}
+
+Back in the days of early software development it was quite common to develop a product for months or even years and finally start to integrate it - i.e. preparing the release of the product. Stakeholders and developers had no clue how long this could take and lots of problems where introduced with this kind of process. To solve this problem, the idea of integrating often was first introduced in the extreme programming software development process \cite{xp}. The idea is simple: after making any change to a software product, be it a new feature of a bug fix, implementing and testing it locally on a developer machine, it will be commited to the source code control repository. Once a so called CI server recognizes my changes, it starts building and testing it again but this time it may also contain changes from other developers. The CI server will execute a so called build, including a pipeline of tasks to be executed in order to check if everything is ok. If this build fails the developer making the change will get notified immediately. And this is the whole point: integration errors are detected immediately and can get fixed right away, making the integration process much more transparent.
+
+Some practices necessary to make this work are: 
+
+\begin{itemize}
+	\item Usage of a single source code repository
+	\item Automation the build using a CI server - every commit should build the product on the integration server
+	\item Adding tasks to the build pipeline like static code analysis and unit tests which are executed after building
+	\item Notifying all relevant parties of the project about failing builds
+\end{itemize}
+
+Nowadays, CI is quite heavily used in modern development projects and there are also ideas and efforts taken to automate security assurance inside the build pipelines of a CI server. 
+
+\subsection{DevSecOps}
+
+Traditionally, security assurance if a process done mostly at the end of the software development lifecycle. Security testing methods like penetration testing will concentrate on finding vulnerabilities in already (or soon to be) released products. This is good and needed, the term DevSecOps just suggest that security assurance may be automated as well as things like unit testing inside the CI server build pipeline - all while the development process is still ongoing. This work will focus on investigating tools and methods to achieve that.
 
 
 \section{Tools}
@@ -81,15 +110,22 @@ Hauptaufgabe des Papers: Ordnung in Chaos
 - Kategorisierung hier! dann pro Kat ein paar Tools
 - auch auf CIs eingehen? Jenkins, GitLab etc
 
+Own ideas and contributions constitute main part of the content
 
-\subsection{Tool 1}
-Sed nisl eros, semper sollicitudin
 
-\subsection{Tool 2}
-Sed nisl eros, semper sollicitudin
+\subsection{SAST}
+Hier ggf fokus auf JavaScript, PHP und Rust oder so.
 
-\subsection{Tool N}
-Sed nisl eros, semper sollicitudin
+Hier auch dependency checks?
+
+\subsection{DAST}
+Fokus auf OpenSource!
+
+\subsection{IAST}
+??? google!
+
+\subsection{Analysing containers???}
+
 
 \section{Discussion}
 
@@ -106,10 +142,14 @@ OSS gibts nix für Go, bla bla\\
 - Wie gehts weiter mit embed, Industrial Bereich? etc......\\
 - hier mussen paar Fragen entstehen die ich dann in Conclusion beantworten kann!!!!!!!!!\\
 
+- dieses literatur paper hat einige sachen drin für hier! zb missing knowledge unter devs, inter team collaboration issues ETC!!!!!!!!!
 
 \section{Conclusion}
 
 - Fragen aus Discussion nun beantworten!
+
+Summarizes results of the paper
+ States relevance of results in a broader scope
 
 
 % literature
