@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.7)  20 APR 2022 11:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.7)  20 APR 2022 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -456,32 +456,89 @@ File: fig/hsa_logo-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: fig/hsa_logo-eps-converted-to.pdf  used on input line 
 36.
 (pdftex.def)             Requested size: 113.81102pt x 68.97087pt.
- [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
+
+ []
+
+[1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./fig/hsa_logo-eps-converted-to.pdf>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 94.
+Underfull \hbox (badness 1442) in paragraph at lines 74--76
+\OT1/ptm/m/it/10 and Con-tin-u-ous De-liv-ery Tech-nolo-gies \OT1/ptm/m/n/10 [[
+]4[]], a Bach-e-lor's
+ []
 
- (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--76
+
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 77--79
+\OT1/ptm/m/it/10 Web ap-pli-ca-tion se-cu-rity test-ing as part of con-tin-u-ou
+s
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--82
+
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 83--85
+\OT1/ptm/m/it/10 Challenges and so-lu-tions when adopt-ing De-vSec-Ops: A
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 83--85
+\OT1/ptm/m/it/10 sys-tem-atic re-view \OT1/ptm/m/n/10 [[]7[]] by Roshan N. Ra-j
+apakse et. al.
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 83--85
+\OT1/ptm/m/n/10 about chal-lenges faced by prac-ti-tion-ers when adopt-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 100
+.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 94.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 100
+.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 135--144
+) [2]
+Underfull \hbox (badness 10000) in paragraph at lines 143--152
 \OT1/ptm/m/n/10 - Was hab ich denn se-hen nach meiner Tool
  []
 
 
-Underfull \hbox (badness 2088) in paragraph at lines 135--144
+Underfull \hbox (badness 2088) in paragraph at lines 143--152
 \OT1/ptm/m/n/10 - hier mussen paar Fra-gen entste-hen die ich dann in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--144
+Underfull \hbox (badness 10000) in paragraph at lines 143--152
 
  []
 
@@ -551,18 +608,18 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 - LAST -
-Extra skip:128.37813pt
+Extra skip:23.05081pt
 Left:672.0pt/0.0pt
-Right:581.69975pt/1.73193pt
-Output:689.0321pt
-[2] (./seminar_template.aux)
+Right:358.4999pt/1.73193pt
+Output:355.56573pt
+[3] (./seminar_template.aux)
 Package rerunfilecheck Info: File `seminar_template.out' has not changed.
 (rerunfilecheck)             Checksum: 5DD574DF7D90964396797F92D81C2FC0;1386.
  ) 
 Here is how much of TeX's memory you used:
- 10379 strings out of 478994
- 156125 string characters out of 5858185
- 504470 words of memory out of 5000000
+ 10380 strings out of 478994
+ 156131 string characters out of 5858185
+ 486922 words of memory out of 5000000
  27705 multiletter control sequences out of 15000+600000
  437596 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -573,10 +630,10 @@ live/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/
 texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2021/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on seminar_template.pdf (2 pages, 94685 bytes).
+Output written on seminar_template.pdf (3 pages, 99870 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
+ 135 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
  110 words of extra memory for PDF output out of 10000 (max. 10000000)
 

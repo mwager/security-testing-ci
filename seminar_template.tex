@@ -57,27 +57,33 @@ As this is also still a very young process, it is pretty obvious that software s
 - Früher common DANACH zb durch pen testing, -> dann intro zum SDL! elcher schon eher den prozess fixen will!
 next satz is bullshit:
 
- In the context of the Security Development Lifecycle \cite{sdl}, one idea to ensure a great level of application security is to automate as much as possible directly during the CI pipeline. 
+In the context of the Security Development Lifecycle \cite{sdl}, one idea to ensure a great level of application security is to automate as much as possible directly during the CI pipeline. 
 
-This work tries to provide an overview of the current state of continuous security testing, its categories, possibilities and limits and will also present some existing tools. The paper is structured as follows: First it will give an overview of related work and some technical background before going through tools. Finally a discussion of the findings will be ended with a conclusion.
+This work tries to provide an overview of the current state of continuous security testing, its categories, possibilities and limits and will also present some existing tools. The paper is structured as follows: First it will give an overview of related work and some technical background before going through tools. Finally a discussion of the findings will be ended with a conclusion. TODO: BESSER HIER!!!!!!!!!!!!!
 
 \section{Related work}
 
-\cite{relatedpaper1}
-\cite{relatedpaper2}
-\cite{relatedpaper3}
-\cite{relatedpaper4}
-\cite{relatedpaper5}
-\cite{relatedpaper6}
---> halt checken was da ggf fehlt, bissl drauf eingehen und zusammenfassen
+This chapter presents related work and states some differences and open questions on which this paper tries to go into.\\ --> TODO!!!
 
-Summarizes work on related problems/approaches, but no background knowledge
- Differences of previous work and own work are clearly stated
+\noindent
+\textit{Security testing in continuous integration processes} \cite{relatedpaper1} is a Master’s Thesis by Juha Kuusela and reviews existing security methods and tools in order to analyze their applicability into CI pipelines. It concludes that, among others, dependency verification makes great sense and can be automated pretty easy. The paper only covers a section of available technologies and therefore cannot conclude on a wide range of relevant languages.\\
+ 
+\noindent
+\textit{Evaluation of the applicability of security testing techniques in continuous integration environments} \cite{relatedpaper2} is a Master’s Thesis by Pontus Thulin. It explores how existing security techniques work in a CI environment and what level of security they can help assure. It focuses on agile methods in the field of web application development and more on techniques instead of tools. However, as it takes a more theoretical approach, it is missing a comparison of tools in order to better conclude about its practicability. \\
 
-- Check andere Papers
--> SO: Was macht anderes Paper und was mach ich hier anders? nur 1-3 Sätze pro Paper!
--> auch: von wann sind die papers? Sind die aktuell? Ist das noch relevant und/oder was hat sich geändert?
--> nur die die ziemlich ähnlich sind? -> Ähnliches Ziel. So wie alle die ich bis jetzt gelesen hab :D
+\noindent
+\textit{Automated Security Testing Utilizing Continuous Integration and Continuous Delivery Technologies} \cite{relatedpaper3}, a Bachelor’s thesis by Pyry Koskela, presents an implementation of a containerized vulnerability scanning construct tailored to a specific client infrastructure. It presents an interesting final implementation but lacks a comprehensive comparison of more tools. \\
+
+\noindent
+\textit{Web application security testing as part of continuous integration in .NET projects} \cite{relatedpaper4} is a Master’s Thesis by Joona Immonen from 2015. It focuses only on security controls for continuous integration in the field of web application development using .NET projects and the Jenkins continuous integration environment platform. Due to focusing on only one programming language it lacks a greater comparison of tools for generic usage. \\
+
+\noindent
+\textit{Adding security testing in DevOps software development with continuous integration and continuous delivery practices} \cite{relatedpaper5} is a Bachelor’s thesis by Ella Viitasuo from 2020. It focuses on developing a CI/CD pipeline for modern software projects including automated security testing as a first step to integrate security into software projects. As it also focuses on the field of web application development and OWASP Top 10 it obviously is missing a more generic comparison. \\
+
+\noindent
+\textit{Challenges and solutions when adopting DevSecOps: A systematic review} \cite{relatedpaper6} by Roshan N. Rajapakse et. al. is a study study aiming on systemizing the knowledge about challenges faced by practitioners when adopting "DevSecOps" and the proposed solutions reported in the literature conducting a Systematic Literature Review (SLR). It provides a comprehensive overview of existing literature, challenges and solutions to problems in the field of automating security assurance and also identifies areas that need further research like how to automate traditionally manual security practices.\\
+
+As the field of automating security assurance is pretty young, all of the reviewed papers also are quite up to date (oldest being from 2015). All of them follow a similar goal but mostly tailored for a specific usecase of specific set of languages or technologies. The purpose of this work is to give a better overview and comparison for a more generic approach in order to give teams a simple and straightforward guide on tools to use, challenges to face and finally suggestions research more or deploy them into their own CI server infrastructure.
 
 
 \section{Background}
@@ -103,6 +109,8 @@ Nowadays, CI is quite heavily used in modern development projects and there are 
 
 Traditionally, security assurance if a process done mostly at the end of the software development lifecycle. Security testing methods like penetration testing will concentrate on finding vulnerabilities in already (or soon to be) released products. This is good and needed, the term DevSecOps just suggest that security assurance may be automated as well as things like unit testing inside the CI server build pipeline - all while the development process is still ongoing. This work will focus on investigating tools and methods to achieve that.
 
+
+\newpage
 
 \section{Tools}
 Hauptaufgabe des Papers: Ordnung in Chaos
