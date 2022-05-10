@@ -72,6 +72,9 @@ K.~Beck, ``Extreme programming explained: Embrace change,'' 1999.
 \bibitem{sast5}
 ``Appscan,'' \url{https://www.hcltechsw.com/appscan/offerings/source}.
 
+\bibitem{sast0}
+``Kiuwan,'' \url{https://www.kiuwan.com/code-security-sast/}.
+
 \bibitem{dast1}
 ``Netsparker/invicti,'' \url{https://www.invicti.com/plp/dast/}.
 
@@ -93,11 +96,18 @@ K.~Beck, ``Extreme programming explained: Embrace change,'' 1999.
 \bibitem{dast7}
 ``Veracode,'' \url{https://www.veracode.com/products/dynamic-analysis-dast}.
 
+\bibitem{appsecbook}
+T.~Janca, ``Alice and bob learn application security,'' 2020.
+
 \bibitem{iast1}
 ``Contrast asses,'' \url{https://www.contrastsecurity.com/contrast-assess}.
 
 \bibitem{iast2}
 ``Seeker,''
   \url{https://www.synopsys.com/software-integrity/security-testing/interactive-application-security-testing.html}.
+
+\bibitem{iast12}
+``Contrast protect demo,''
+  \url{https://contrastsecurity.wistia.com/medias/80y2qkb6aq}.
 
 \end{thebibliography}

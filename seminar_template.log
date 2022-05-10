@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.7)  24 APR 2022 16:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.7)  10 MAY 2022 14:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -486,7 +486,7 @@ Package epstopdf Info: Source file: <fig/hsa_logo.eps>
 -to.pdf fig/hsa_logo.eps>
 (epstopdf)             \includegraphics on input line 39.
 Package epstopdf Info: Output file is already uptodate.
-<fig/hsa_logo-eps-converted-to.pdf, id=132, 662.475pt x 401.5pt>
+<fig/hsa_logo-eps-converted-to.pdf, id=136, 662.475pt x 401.5pt>
 File: fig/hsa_logo-eps-converted-to.pdf Graphic file (type pdf)
 <use fig/hsa_logo-eps-converted-to.pdf>
 Package pdftex.def Info: fig/hsa_logo-eps-converted-to.pdf  used on input line 
@@ -523,7 +523,12 @@ Package pdftex.def Info: fig/hsa_logo-eps-converted-to.pdf  used on input line
 39.
 (pdftex.def)             Requested size: 113.81102pt x 68.97087pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
 
  []
 
@@ -532,18 +537,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--69
 
  []
 
+[1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ <./fig/hsa_logo-eps-converted-to.pdf>]
+Underfull \hbox (badness 1442) in paragraph at lines 70--72
+\OT1/ptm/m/it/10 and Con-tin-u-ous De-liv-ery Tech-nolo-gies \OT1/ptm/m/n/10 [[
+]4[]], a Bach-e-lor's
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 70--72
 
  []
 
-[1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-
- <./fig/hsa_logo-eps-converted-to.pdf>]
-Underfull \hbox (badness 1442) in paragraph at lines 73--75
-\OT1/ptm/m/it/10 and Con-tin-u-ous De-liv-ery Tech-nolo-gies \OT1/ptm/m/n/10 [[
-]4[]], a Bach-e-lor's
+Underfull \hbox (badness 2221) in paragraph at lines 73--75
+\OT1/ptm/m/it/10 Web ap-pli-ca-tion se-cu-rity test-ing as part of con-tin-u-ou
+s
  []
 
 
@@ -552,14 +563,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--75
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 76--78
-\OT1/ptm/m/it/10 Web ap-pli-ca-tion se-cu-rity test-ing as part of con-tin-u-ou
-s
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
+Underfull \hbox (badness 1648) in paragraph at lines 79--81
+\OT1/ptm/m/it/10 Challenges and so-lu-tions when adopt-ing De-vSec-Ops: A
+ []
 
+
+Underfull \hbox (badness 1565) in paragraph at lines 79--81
+\OT1/ptm/m/n/10 faced by prac-ti-tion-ers when adopt-ing "De-vSec-Ops" and
+ []
+
+
+Underfull \hbox (badness 4492) in paragraph at lines 79--81
+\OT1/ptm/m/n/10 a Sys-tem-atic Lit-er-a-ture Re-view (SLR). It pro-vides a
  []
 
 
@@ -567,103 +587,97 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
-
-Underfull \hbox (badness 1648) in paragraph at lines 82--84
-\OT1/ptm/m/it/10 Challenges and so-lu-tions when adopt-ing De-vSec-Ops: A
- []
-
-
-Underfull \hbox (badness 1565) in paragraph at lines 82--84
-\OT1/ptm/m/n/10 faced by prac-ti-tion-ers when adopt-ing "De-vSec-Ops" and
- []
-
-
-Underfull \hbox (badness 4492) in paragraph at lines 82--84
-\OT1/ptm/m/n/10 a Sys-tem-atic Lit-er-a-ture Re-view (SLR). It pro-vides a
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
-
- []
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 99.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 96.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 99.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 96.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2]
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 136--137
 []\OT1/ptm/m/n/10 Additionally to these cri-te-ria it should be looked at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 144.
+(hyperref)                removing `\@ifnextchar' on input line 141.
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-51.
+48.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 146--153
+Underfull \hbox (badness 10000) in paragraph at lines 143--150
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 157.
+(hyperref)                removing `\@ifnextchar' on input line 154.
 
 
-Underfull \hbox (badness 2529) in paragraph at lines 159--166
+Underfull \hbox (badness 2529) in paragraph at lines 156--163
 \OT1/ptm/b/n/10 Pricing: \OT1/ptm/m/n/10 An-nual sub-scrip-tion based on the nu
 m-ber of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--166
+Underfull \hbox (badness 10000) in paragraph at lines 156--163
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 170.
+(hyperref)                removing `\@ifnextchar' on input line 167.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--179
-
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 183.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--192
+Underfull \hbox (badness 10000) in paragraph at lines 169--176
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 196.
+(hyperref)                removing `\@ifnextchar' on input line 180.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--205
+Underfull \hbox (badness 10000) in paragraph at lines 182--189
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 193.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--202
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 207.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--216
 
  []
 
@@ -671,30 +685,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--205
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
-
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 263.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 265--270
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 275.
+(hyperref)                removing `\@ifnextchar' on input line 274.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--282
+Underfull \hbox (badness 10000) in paragraph at lines 276--281
 
  []
 
@@ -718,10 +723,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--304
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 309.
+(hyperref)                removing `\@ifnextchar' on input line 308.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--316
+Underfull \hbox (badness 10000) in paragraph at lines 310--315
 
  []
 
@@ -730,7 +735,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 320.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--328
+Underfull \hbox (badness 10000) in paragraph at lines 322--327
 
  []
 
@@ -738,8 +743,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 322--328
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 331.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--339
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 342.
+
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 333--338
+Underfull \hbox (badness 10000) in paragraph at lines 344--349
 
  []
 
@@ -747,69 +761,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 333--338
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 6510) in paragraph at lines 366--367
+Underfull \hbox (badness 6510) in paragraph at lines 377--378
 \OT1/ptm/m/n/10 back-end con-nec-tions) thus pro-vid-ing a com-pre-hen-sive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--367
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 370.
+(hyperref)                removing `\@ifnextchar' on input line 381.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--377
-
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 380.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 382--387
+Underfull \hbox (badness 10000) in paragraph at lines 383--388
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 390.
+(hyperref)                removing `\@ifnextchar' on input line 391.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
- \OT1/ptm/m/it/10 3) NetSparker/Invicti [[]14[]]: [][][] \OT1/ptm/m/n/10 Netspa
+Underfull \hbox (badness 10000) in paragraph at lines 393--398
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 402.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+ \OT1/ptm/m/it/10 3) NetSparker/Invicti [[]15[]]: [][][] \OT1/ptm/m/n/10 Netspa
 rker, which was
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 394.
+(hyperref)                removing `\@ifnextchar' on input line 406.
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 394--395
- \OT1/ptm/m/it/10 4) Acunetix [[]15[]]: [][][] \OT1/ptm/m/n/10 Also Acunetix, w
+Underfull \hbox (badness 1565) in paragraph at lines 406--407
+ \OT1/ptm/m/it/10 4) Acunetix [[]16[]]: [][][] \OT1/ptm/m/n/10 Also Acunetix, w
 hich was al-ready
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 398.
+(hyperref)                removing `\@ifnextchar' on input line 410.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
+
+ []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
+Underfull \hbox (badness 3118) in paragraph at lines 430--431
+\OT1/ptm/m/n/10 com-po-si-tion anal-y-sis is also an im-por-tant method for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--431
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
 
@@ -831,10 +860,16 @@ Underfull \hbox (badness 5133) in paragraph at lines 47--50
 de-liv-ery
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 66--68
 []\OT1/ptm/m/n/8 ``Veracode,'' []$https : / / www . veracode . com / products /
 
+ []
+
+
+Underfull \hbox (badness 4981) in paragraph at lines 110--112
+[]\OT1/ptm/m/n/8 ``Contrast pro-tect demo,'' []$https : / / contrastsecurity . 
+wistia . com / medias /
  []
 
 )
@@ -850,32 +885,32 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 - LAST -
-Extra skip:10.56804pt
-Left:567.07507pt/0.0pt
-Right:549.59996pt/1.73193pt
-Output:511.8324pt
-[6] (./seminar_template.aux)
+Extra skip:0.0pt
+Left:129.0pt/1.73193pt
+Right:129.0pt/1.73193pt
+Output:129.5pt
+[7] (./seminar_template.aux)
 Package rerunfilecheck Info: File `seminar_template.out' has not changed.
-(rerunfilecheck)             Checksum: 971F6314E23B98E5288484A9DB5216B2;4724.
+(rerunfilecheck)             Checksum: 32E4AE1032E4260A9148C032E2ADC3D0;4931.
  ) 
 Here is how much of TeX's memory you used:
- 11196 strings out of 478994
- 166674 string characters out of 5858185
- 533293 words of memory out of 5000000
- 28450 multiletter control sequences out of 15000+600000
+ 11205 strings out of 478994
+ 166783 string characters out of 5858185
+ 509133 words of memory out of 5000000
+ 28454 multiletter control sequences out of 15000+600000
  442926 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,9n,74p,1253b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,9n,74p,1253b,486s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/
 texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2021/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on seminar_template.pdf (6 pages, 123370 bytes).
+Output written on seminar_template.pdf (7 pages, 125951 bytes).
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
- 263 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 302 PDF objects out of 1000 (max. 8388607)
+ 282 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 270 words of extra memory for PDF output out of 10000 (max. 10000000)
 

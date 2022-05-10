@@ -37,9 +37,6 @@
 % make the title area
 \maketitle
 
-% TODO: INCLUDES der Hauptpunkte, aber erst nach REVIEW!!!
-% \input{sections/section01.tex}
-
 % abstract
 \begin{abstract}
 	% TODO: see Script 02_scientific_writing.handout "Abstract" !!!! genau wie da
@@ -54,7 +51,7 @@
 % introduction section
 \section{Introduction}
 
-Software development is still a very young craft. But we are writing the year 2022 and the amount of devices containing more and more complex software is growing rapidly. Comprehensive quality assurance, especially in the field of web application development, also could deserve a lot more attention. Nevertheless, while a few years ago it was quite common practice to edit files on a production server directly via FTP in order to deploy a fix or a change, today methods and processes to assure a certain level of quality are used quite often. One of that method is called Continuous Integration (CI). The idea is to provide immediate feedback to the developers directly after the integration of changes to a codebase. On every push to the repository a so called CI server starts executing a pipeline of predefined tasks to ensure high quality and to make sure the changes do not break existing functionality. Common tasks are static code analysis to ensure a clean coding style or to catch simple development mistakes or unit testing to make sure the codebase maintains a high quality standard.
+Software development is still a very young craft. But we are writing the year 2022 and the amount of devices containing more and more complex software is growing rapidly. Comprehensive quality assurance, especially in the field of web application development, definitely could deserve a lot more attention. Nevertheless, while a few years ago it was quite common practice to edit files on a production server directly via FTP in order to deploy a fix or a change, today methods and processes to assure a certain level of quality are used quite often. One of that method is called Continuous Integration (CI). The idea is to provide immediate feedback to the developers directly after the integration of changes to a codebase. On every push to the repository a so called CI server starts executing a pipeline of predefined tasks to ensure high quality and to make sure the changes do not break existing functionality. Common tasks are static code analysis to ensure a clean coding style or to catch simple development mistakes or unit testing to make sure the codebase maintains a high quality standard.
 
 As this is also still a very young process, sadly software security does not play a big role inside these processes. As the pandemic led to a way higher usage of software in order to stay connected with friends, family and coworkers and also recent attacks against critical infrastructure moving through the media, cyber security gets a greater attention in recent times.
 
@@ -116,7 +113,7 @@ This chapter gives a overview of current tools for continuous security testing. 
 
 \subsection{Static application security testing (SAST)}
 
-SAST tools scan the source code, byte code or binary of an application without running it with the goal of identifying vulnerabilities before deployment. They can assure secure coding practices are followed and find potential vulnerabilities in the source code. It follows the idea of integrating security early into the software development life cycle (i.e. shift-left security). The following criteria should be taken into account when evaluating SAST tools: \\
+SAST tools work by scanning the source code, byte code or binary of an application without running it with the goal of identifying vulnerabilities before deployment. They can assure secure coding practices are followed and find potential vulnerabilities in the source code. It follows the idea of integrating security early into the software development life cycle (i.e. shift-left security). The following criteria should be taken into account when evaluating SAST tools: \\
 
 \begin{itemize}
 	\item \textbf{CI integration}
@@ -133,7 +130,7 @@ SAST tools scan the source code, byte code or binary of an application without r
 	
 	\item \textbf{Developer productivity}
 	
-	In order to make developers work with the tool it is necessary to generate reports with good explanations of the detected flaws. Developers often may not have sufficient security knowledge and therefore hints on how to fix the detected flaws are very much appreciated.
+	In order to make developers work with the tool it is necessary to generate reports with good explanations of the detected flaws. Developers often may not have sufficient security knowledge and therefore hints on how to fix the detected flaws are very much appreciated.\\
 \end{itemize}
 
 Additionally to these criteria it should be looked at language support, the model of delivery and pricing.\\
@@ -141,7 +138,7 @@ Additionally to these criteria it should be looked at language support, the mode
 \noindent
 \subsubsection{SonarQube \cite{sast1}}
 
-SonarQube community edition provides vulnerability detection, code smell tracking, technical debt reviews and remediation, code quality history and metrics. It can be integrated with CI pipelines like Jenkins, Azure DevOps and more and it is possible to extend its functionality further using more than 60 community plugins. It can detect injection flaws and may also be integrated directly into IDEs. 
+SonarQube SAST detects security issues in source code, supports the usage of quality gates and provides a quality history and other metrics. It can be integrated with CI pipelines like Jenkins, Azure DevOps and more and it is possible to extend its functionality further using more than 60 community plugins. It can detect injection flaws and may also be integrated directly into IDEs. 
 
 \noindent\\
 \textbf{Language support:} Supports 29 languages
@@ -154,7 +151,7 @@ SonarQube community edition provides vulnerability detection, code smell trackin
 \noindent
 \subsubsection{WhiteSource \cite{sast2}}
 
-WhiteSource SAST provides visibility to over 70 CWE types - including OWASP Top 10 and SANS 25 - in desktop, web and mobile applications. They are claiming to be ten times faster than other SAST tools and it integrates well with existing DevOps environment and common CI tools.
+WhiteSource SAST can make over 70 CWE types visible - including OWASP Top 10 and SANS 25 - in desktop, web and mobile applications. They are claiming to be ten times faster than other SAST tools and it integrates well with existing DevOps environment and common CI tools.
 
 \noindent\\
 \textbf{Language support:} Supports 27 languages
@@ -170,7 +167,7 @@ WhiteSource SAST provides visibility to over 70 CWE types - including OWASP Top 
 Veracode analyzes source code and provides automated security feedback and is easy to integrate into all major CI tools and also IDEs. They claim to have good speed, a false-positive rate of less than 1.1 percent and provides tips for fixing vulnerabilities when they are found.
 
 \noindent\\
-\textbf{Language support:} Supports 25 languages for desktop, web, and mobile applications
+\textbf{Language support:} Supports 25 languages
 \noindent\\
 \textbf{Delivery model:} Cloud
 \noindent\\
@@ -180,7 +177,7 @@ Veracode analyzes source code and provides automated security feedback and is ea
 \noindent
 \subsubsection{Codacy \cite{sast4}}
 
-Codacy provides insights about the code that go beyond security, including the current code quality of the project and its health over time. It integrates well with existing CI tools and claims to have a low false positive rate. 
+Codacy produces scan results about the code that go beyond security, including code quality metrics and general code health. It integrates well with existing CI tools and claims to have a low false positive rate. It has support for OWASP Top 10 and other standards and features commit suggestions in pull requests.
 
 \noindent\\
 \textbf{Language support:} Supports over 40 languages
@@ -193,12 +190,26 @@ Codacy provides insights about the code that go beyond security, including the c
 \noindent
 \subsubsection{AppScan \cite{sast5}}
 
-AppScan performs vulnerability checks and generates a report that includes remediation suggestions. It supports automation via API and good integration into common CI tools.
+AppScan serves vulnerability checks and generates reports including remediation suggestions. It supports automation via API and good integration into common CI tools.
 
 \noindent\\
 \textbf{Language support:} Supports 35 languages and frameworks
 \noindent\\
 \textbf{Delivery model:} On-premises and cloud
+\noindent\\
+\textbf{Pricing:} Not publicly available
+\\
+
+
+\noindent
+\subsubsection{Kiuwan Code Security \cite{sast0}}
+
+Kiuwan automatically scans source code to find vulnerabilities. It is compliant with relevant standards like OWASP and CVE, covers a large range of programming languages and integrates well into CI pipelines.
+
+\noindent\\
+\textbf{Language support:} Supports more than 30 languages
+\noindent\\
+\textbf{Delivery model:} On-premises, cloud, hybrid
 \noindent\\
 \textbf{Pricing:} Not publicly available
 \\
@@ -209,14 +220,14 @@ All tools presented in this section have very good language support and integrat
 	\centering
 	\scriptsize
 	\caption{Comparison of SAST Tools}
-	\begin{tabular}{l | c | c | c | c | c}
+	\begin{tabular}{l | c | c | c | c | c | c}
 		\toprule
-		\textbf{} & \textbf{SonarQube}& \textbf{WhiteSource} & \textbf{VeraCode} & \textbf{Codacy} & \textbf{AppScan}\\
+		\textbf{} & \textbf{SonarQube}& \textbf{WhiteSource} & \textbf{VeraCode} & \textbf{Codacy} & \textbf{AppScan} & \textbf{Kiuwan}\\
 		\hline
-		\rowcolor[gray]{.9} CI integration    & very good & very good & very good & very good & very good\\
-		Scan speed   & fast & very fast  & fast & fast & fast \\
-		\rowcolor[gray]{.9}  False positive rate & low & low  & very low & low & low  \\
-		Developer productivity  &  developer training included & easy to use & provides tips for developers & good developer feedback & developer friendly \\
+		\rowcolor[gray]{.9} CI integration    & very good & very good & very good & very good & very good & very good\\
+		Scan speed   & fast & very fast  & fast & fast & fast & very fast \\
+		\rowcolor[gray]{.9}  False positive rate & low & low  & very low & low & low & low  \\
+		Developer productivity  &  developer training included & easy to use & provides tips for developers & good developer feedback & developer friendly & good reports \\
 
 		%			\makebox[2.4cm][r] Upper bound & 147.07 & 153.81 \\
 		%			\makebox[2.4cm][r] Lower bound & 119.31 & 124.96 \\
@@ -361,7 +372,7 @@ Table \ref{table:comparison_dast} provides a comparison of the criteria defined 
 
 \subsection{Interactive application security testing (IAST)}
 
-Contrary to SAST and DAST tools, there is a a new technology called interactive application security testing, or runtime security testing, short IAST. IAST tries to combine the advantages of the other two methods while leaving out the disadvantages they bring like false positive rates or scan speed. IAST does not need a running application, it depends on automated functional test cases or manual testing to drive the application and an agent runs in the background trying to identify vulnerabilities in the execution path of the tests already run or while they are running. This means IAST is only applicable if there already exists a very high test coverage of an application. But this also means that every test run will be automatically converted to a security test also. 
+Contrary to SAST and DAST tools, there is a new type of testing method called interactive application security testing, or runtime security testing, short IAST \cite[p.~140]{appsecbook}. IAST tries to combine the advantages of the other two methods while leaving out the disadvantages they bring like false positive rates or scan speed. IAST does not need a running application, it depends on automated functional test cases or manual testing to drive the application and an agent runs in the background trying to identify vulnerabilities in the execution path of the tests already run or while they are running. This means IAST is only applicable if there already exists a very high test coverage of an application. But this also means that every test run will be automatically converted to a security test also. 
 
 It is using so called agents within the application to test for vulnerabilities dynamically in as it runs. These agents are connected to the application directly and are analyzing while it is manually or automatically tested, identifying vulnerabilities in real time. They are using runtime security instrumentation to analyze applications (e.g. source code, HTTP traffic, backend connections) thus providing a comprehensive view of vulnerabilities. This technology allows for easier testing automation than the other application security testing (AST) methods presented above because for example SAST tools may take very long and DAST tools are often inaccurate.\\
 
@@ -385,6 +396,7 @@ Seeker is an IAST tool claiming to focus on real vulnerabilities. They have a pa
 \textbf{Pricing:} Not publicly available
 \\
 
+
 \subsubsection{NetSparker/Invicti \cite{dast1}}
 
 Netsparker, which was presented above in the section of DAST tools, also provides IAST functionality claiming to find more real vulnerabilities using their unique dynamic + interactive scanning approach.\\
@@ -396,7 +408,6 @@ Also Acunetix, which was already presented, provides an additional tool (called 
 \subsubsection{Veracode \cite{dast7}}
 
 Finally also VeraCode provides IAST functionality making it a complete solution to cover all three AST methods using one platform.
-
 
 \section{Discussion}
 
@@ -412,9 +423,15 @@ Related the comparison of DAST tools all the presented tools support CI integrat
 
 \subsection{IAST}
 
-Research of IAST tools found two tools definitely worth looking into more deeply: Contrast Asses and Seeker. Both tools  seem to offer a really comprehensive set of advantages related continuous security testing, especially because they are embracing the interactive real time approach called IAST. Not only they combine the advantages of SAST and DAST tools while removing their disadvantages, they also integrate well with the DevOps method and additionally bring other benefits like architectural overview or conversion of already written test cases to security test cases. 
+Research of IAST tools found two tools definitely worth looking into more deeply: Contrast Asses and Seeker. Both tools  seem to offer a really comprehensive set of advantages related continuous security testing, especially because they are embracing the interactive real time approach called IAST. Not only they combine the advantages of SAST and DAST tools while removing their disadvantages, they also integrate well with the DevOps method and additionally bring other benefits like architectural overview or conversion of already written test cases to security test cases. \\
 
-Also, an important method for scanning external libraries for security issues was not presented in this paper but for example Contrast Assess provide the functionality to automatically analyze external third party libraries in order to find issues in these used dependencies. This security feature was also declared a low hanging fruit in some of the related papers where also other tools are provided for this purpose.\\
+\textbf{Software Composition Analysis (SCA)}
+
+Open source security and so called supply chain attacks are a big deal in the world of secure coding. Software composition analysis is also an important method for application security testing: it scans external libraries for security issues. For example, Kiuwan and Contrast Assess provide the functionality to automatically analyze external third party libraries in order to find issues in these used dependencies. This security feature was also declared a low hanging fruit in some of the related papers where also tools are presented for this purpose.\\
+
+\textbf{Runtime application self-protection (RASP)}
+
+Another method not mentioned, as not related to integration into CI pipelines, is runtime application self-protection. This method enables inspecting application behavior while the application is running, usually in production. Using this approach is similar to IAST, with the difference that RASP can detect and \textbf{block} attacks in realtime while they occur. As an example, Contrast protect has a great demonstration video on detecting and blocking attacks on the log4j vulnerability without patching the vulnerable library \cite{iast12}.\\
 
 Most of the tools presented in this paper focus on the field of web application development. For the area of industrial software components and embedded devices, more research could be conducted.
 
@@ -424,11 +441,11 @@ Most of the tools presented in this paper focus on the field of web application 
 
 \section{Conclusion}
 
-The goal of this paper was to research current tools for security testing in continuous integration environments in order to automate security testing inside the software development life cycle. Therefore, a recherche of related work was conducted to first get an overview of work already done in this area. Although the related work is presenting a good amount of available tools, research has shown that the market has to offer more. Also, all of the reviewed papers talk about the missing security knowledge developers have in general and it was found that the reviewed tools of this paper tackle this issue with good documentation and even tips for fixing found issues like source code hints. Besides that, most of the tools presented here offer very good integration into the DevSecOps step making it easy to integrate into existing CI tools. It can be concluded that lots of tools and professional products exist in the market today and can be used quite easily, be it open source or paid services.
+The goal of this paper was to research current tools for security testing in continuous integration environments in order to automate security testing inside the software development life cycle. Therefore, a recherche of related work was conducted to first get an overview of work already done in this area. Although the related work is presenting a good amount of available tools, research has shown that the market has to offer more. Also, all of the reviewed papers talk about the missing security knowledge developers have in general and it was found that the reviewed tools of this paper tackle this issue with good documentation and even tips for fixing found issues like source code hints. Besides that, most of the tools presented here offer very good integration into the DevSecOps process making it easy to integrate into existing CI tools. It can be concluded that lots of tools and professional products exist in the market today and can be used quite easily, be it open source or paid services.
 
-This work only provides a theoretical review and comparison, no practical case studies were conducted. Because of that, in order for teams to decide on which tools to integrate, more practical reviews should be done and is highly recommended. Each team is different and has unique requirements. All of the presented tools provide demos or very good documentation.
+This work only provides a theoretical review and comparison, no practical case studies were conducted. Because of that, in order for teams to decide on which tools to integrate, more practical reviews should be done and is highly recommended. Each team is different and has unique requirements. All of the presented tools provide demos and very good documentation.
 
-Related the three categories of application security testing, especially the interactive real time approach (IAST) seems to be extremely effective and accurate. Because of its real time analyzation of running applications it provides a more sophisticated approach compared to the other two methods. Being able to scan each line of code from inside and therefore having knowledge about the control flow and context of an application, much better results can be presented. This knowledge is pretty helpful. For example, using IAST it is possible to identify credit card numbers extracted from a database and alert when these credit card numbers end up exposed in a log file. Also the possibility of conducting an architectural analysis and therefore finding flaws in the design of software seems to be a very large advantage. It can be concluded that, also related to time and budget, it is definitely worth looking into the approach of IAST first.
+Related the three categories of application security testing, especially the interactive real time approach (IAST) seems to be extremely effective and accurate. Because of its real time analyzation of running applications it provides a more sophisticated approach compared to the other two methods. Being able to scan each line of code from inside and therefore having knowledge about the control flow and context of an application, much better results can be presented. This knowledge is pretty helpful. For example, using IAST it is possible to identify credit card numbers extracted from a database and alert when these credit card numbers end up exposed in a log file. Also the possibility of performing an architectural analysis and therefore finding flaws in the design of already written software seems to be a very large advantage and could also be helpful when conducting threat modeling of legacy applications. It can be concluded that, also related to time and budget, it is definitely worth looking into the approach of IAST first.
 
 Although automated tools surely do not take away the need for manual security testing like threat modeling, code reviews or manual penetration testing, they can still support teams on their way to create more secure software in a great way.
 
