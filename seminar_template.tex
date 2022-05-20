@@ -51,11 +51,11 @@
 % introduction section
 \section{Introduction}
 
-Software development is still a very young craft. But we are writing the year 2022 and the amount of devices containing more and more complex software is growing rapidly. Comprehensive quality assurance, especially in the field of web application development, definitely could deserve a lot more attention. Nevertheless, while a few years ago it was quite common practice to edit files on a production server directly via FTP in order to deploy a fix or a change, today methods and processes to assure a certain level of quality are used quite often. One of that method is called Continuous Integration (CI). The idea is to provide immediate feedback to the developers directly after the integration of changes to a codebase. On every push to the repository a so called CI server starts executing a pipeline of predefined tasks to ensure high quality and to make sure the changes do not break existing functionality. Common tasks are static code analysis to ensure a clean coding style or to catch simple development mistakes or unit testing to make sure the codebase maintains a high quality standard.
+Software development is still a very young craft. But we are writing the year 2022 and the amount of devices containing more and more complex software is growing rapidly. Comprehensive quality assurance, especially in the field of web application development, definitely could deserve a lot more attention. Nevertheless, while a few years ago it was quite common practice to edit files on a production server directly via the file transfer protocol (FTP) in order to deploy a fix or a change, today's methods and processes assure a certain level of quality and are used quite often. One of these methods is called Continuous Integration (CI). The idea is to provide immediate feedback to the developers directly after the integration of changes to a codebase. On every push to the repository, a so called CI server starts executing a pipeline of predefined tasks to ensure high quality and to make sure the changes do not break existing functionality. Common tasks are static code analysis to ensure a clean coding style or to catch simple development mistakes or unit testing to make sure the codebase maintains a high quality standard.
 
 As this is also still a very young process, sadly software security does not play a big role inside these processes. As the pandemic led to a way higher usage of software in order to stay connected with friends, family and coworkers and also recent attacks against critical infrastructure moving through the media, cyber security gets a greater attention in recent times.
 
-In the context of the Security Development Lifecycle \cite{sdl}, one idea to ensure a great level of application security is to automate as much and as early as possible directly during development using automation techniques inside CI pipelines. This work tries to provide an overview of categories of continuous security testing together with a review of existing tools. The paper is structured as follows: First an overview of related work and some technical background is given before presenting a selected set of tools. After a discussion the paper will end with a conclusion.
+In the context of the Security Development Lifecycle \cite{sdl}, one idea to ensure a great level of application security is to automate as much and as early as possible directly during development using automation techniques inside CI pipelines. This work provides an overview of categories of continuous security testing together with a review of existing tools. The paper is structured as follows: First an overview of related work and some technical background is given before presenting a selected set of tools. After a discussion the paper will end with a conclusion.
 
 \section{Related work}
 
@@ -126,7 +126,7 @@ SAST tools work by scanning the source code, byte code or binary of an applicati
 	
 	\item \textbf{False positives}
 	
-	A common problem with SAST tools is the generation of many false positives, i.e. detecting flaws which are no flaws at all. Therefore a good SAST tool should have a low false positive rate.
+	A well known problem with SAST tools is the generation of many false positives, i.e. detecting flaws which are no flaws at all. Therefore a good SAST tool should have a low false positive rate.
 	
 	\item \textbf{Developer productivity}
 	
@@ -151,7 +151,7 @@ SonarQube SAST detects security issues in source code, supports the usage of qua
 \noindent
 \subsubsection{WhiteSource \cite{sast2}}
 
-WhiteSource SAST can make over 70 CWE types visible - including OWASP Top 10 and SANS 25 - in desktop, web and mobile applications. They are claiming to be ten times faster than other SAST tools and it integrates well with existing DevOps environment and common CI tools.
+WhiteSource SAST can make over 70 Common Weakness Enumeration (CWE) types visible - including OWASP Top 10 - in desktop, web and mobile applications. They are claiming to be ten times faster than other SAST tools and it integrates well with existing DevOps environment and common CI tools.
 
 \noindent\\
 \textbf{Language support:} Supports 27 languages
@@ -443,7 +443,7 @@ Most of the tools presented in this paper focus on the field of web application 
 
 The goal of this paper was to research current tools for security testing in continuous integration environments in order to automate security testing inside the software development life cycle. Therefore, a recherche of related work was conducted to first get an overview of work already done in this area. Although the related work is presenting a good amount of available tools, research has shown that the market has to offer more. Also, all of the reviewed papers talk about the missing security knowledge developers have in general and it was found that the reviewed tools of this paper tackle this issue with good documentation and even tips for fixing found issues like source code hints. Besides that, most of the tools presented here offer very good integration into the DevSecOps process making it easy to integrate into existing CI tools. It can be concluded that lots of tools and professional products exist in the market today and can be used quite easily, be it open source or paid services.
 
-This work only provides a theoretical review and comparison, no practical case studies were conducted. Because of that, in order for teams to decide on which tools to integrate, more practical reviews should be done and is highly recommended. Each team is different and has unique requirements. All of the presented tools provide demos and very good documentation.
+This work only provides a theoretical review and comparison, no practical case studies were conducted. Because of that, in order for teams to decide on which tools to integrate, more practical reviews should be done and are highly recommended. Each team is different and has unique requirements. All of the presented tools provide demos and very good documentation.
 
 Related the three categories of application security testing, especially the interactive real time approach (IAST) seems to be extremely effective and accurate. Because of its real time analyzation of running applications it provides a more sophisticated approach compared to the other two methods. Being able to scan each line of code from inside and therefore having knowledge about the control flow and context of an application, much better results can be presented. This knowledge is pretty helpful. For example, using IAST it is possible to identify credit card numbers extracted from a database and alert when these credit card numbers end up exposed in a log file. Also the possibility of performing an architectural analysis and therefore finding flaws in the design of already written software seems to be a very large advantage and could also be helpful when conducting threat modeling of legacy applications. It can be concluded that, also related to time and budget, it is definitely worth looking into the approach of IAST first.
 
